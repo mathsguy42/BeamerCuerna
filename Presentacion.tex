@@ -1,0 +1,89 @@
+%%Tema para beamer "Cuerna", versión 1.0
+%%Desarrollado por Geri Morales (gerino.morales@im.unam.mx)
+%%Imate Cuernavaca, UNAM. Agosto 2014.
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[spanish]{babel} 
+\usepackage{graphicx}
+%%Se define el "environment" teorema
+\newtheorem{teorema}{Teorema} 
+
+
+%%Tema de beamer "Cuerna"
+\usetheme{Cuerna} 
+%\usetheme{Cuerna} 
+%%Si se omite "[cuernavaca]" en éste comando, el logotipo se imprime sin la 
+%%leyenda "Unidad Cuernavaca" en la parte inferior.
+
+\usecolortheme{bluesimplex}
+%Available color themes: default, bluesimplex, brick, lettuce
+
+\logo{\includegraphics[width=1.7cm]{bluesimplex.png}}
+
+\title{Título de la presentación}
+\author{Nombre Apellido \\ %Nombre del autor 
+	      \texttt{fulano@im.unam.mx}} %Dirección de correo electrónico (opcional, cuidado con la llave de cierre)
+	      
+\date{Congreso importante 2014} %Fecha o evento en que se presentará la plática
+
+%\institute{Instituto de Matemáticas, unidad Cuernavaca} 
+%%Instituto del ponenete, dado que el texto "Intituto de matemáticas" aparece
+%%en el logo, parece redundante incluirlo además con éste comando.
+
+\begin{document}
+
+\begin{frame}
+
+  \titlepage %Necesario para generar la portada
+  
+\end{frame}
+
+%%La siguiente diapositiva es opcional, si se quiere la tabla de contenidos
+%%Se sebe compilar dos veces el documento para que funcione
+%--------------------------------------------------------------------------
+\begin{frame}
+\tableofcontents %Imprime la tabla de contenido
+\end{frame}
+%--------------------------------------------------------------------------
+
+\section{Introducción} %%Título de la sección (Opcional)
+\begin{frame}
+  \frametitle{Título de la diapositiva}
+  \framesubtitle{Subtítulo} %%Subtítulo de la diapositiva (opcional)
+  Algo de texto en la parte superior
+  
+  \[
+   \int_{0}^{\infty} \frac{5x^2}{\sqrt{a+b}}\, dx
+   \]
+
+  \begin{itemize}
+    \item[\checkmark] Un elemento en la lista %%[\checkmark] muestra una palomita al inicio de la línea
+    \item Segundo elemento
+    \item Otro elemento
+    \item Y finalmente, otro más
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Otra diapositiva} %%Otra forma (más corta) de poner el título a la diapositiva
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+\( \sum_0^{\infty} a_i \) 
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+\end{frame}
+
+\section{Segunda sección} %%Otra sección
+\begin{frame}
+    \frametitle{Un teorema}
+    
+    \begin{teorema} %%Uso del "environment" definido al inicio del documento.
+        Los números primos son infinitos
+    \end{teorema}
+
+    Y algo de texto
+\end{frame}
+
+\end{document}
