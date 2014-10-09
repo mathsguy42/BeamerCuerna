@@ -2,10 +2,12 @@ BeamerCuerna
 ============
 
 Beamer theme "Cuerna", version 1.0
-Copyright Gubertino Cavalieri 
+
+Copyright Gubertino Cavalieri  (2014)
+
 e-mail: mathsguy@bluesimplex.com
-web site: bluesimplex.com
-October 2014.
+
+web site: http://bluesimplex.com
 
 Dependencies:
 - textpos
